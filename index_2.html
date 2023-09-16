@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Usuário e Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Ferramentas</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Listador de Tarefas</a>
+                    <a href="index_2.html">Gerador de Usuário e Senha</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Outros Sites</button>
+                <div class="dropdown-content">
+                    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">Wikipedia</a>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://www.youtube.com/">Youtube</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Mais Sites</button>
+                <div class="dropdown-content">
+                    <a href="https://chat.openai.com/">ChatGPT</a>
+                    <a href="https://unimontes.br/">Unimontes</a>
+                    <a href="https://scholar.google.com.br/?hl=pt">Google Acadêmico</a>
+                    <a href="https://br.search.yahoo.com/?fr2=p:fprd,mkt:br">Yahoo!</a>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        <h1>Gerador de Usuário e Senha</h1>
+        <label>Tamanho da Senha:</label>
+        <input type="number" id="passwordLength" min="1" value="25">
+        <button onclick="generateUserAndPassword(parseInt(document.getElementById('passwordLength').value))">Gerar Usuário e Senha</button>
+        <p>Usuário: <span id="username" class="resposta"></span></p>
+        <p>Senha: <span id="password" class="resposta"></span></p>
+
+    </div>
+
+    <script src="script_2.js"></script>
+</body>
+</html>

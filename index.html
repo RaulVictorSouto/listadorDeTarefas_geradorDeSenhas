@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listador de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Ferramentas</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Listador de Tarefas</a>
+                    <a href="index_2.html">Gerador de Usuário e Senha</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Outros Sites</button>
+                <div class="dropdown-content">
+                    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">Wikipedia</a>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://www.youtube.com/">Youtube</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Mais Sites</button>
+                <div class="dropdown-content">
+                    <a href="https://chat.openai.com/">ChatGPT</a>
+                    <a href="https://unimontes.br/">Unimontes</a>
+                    <a href="https://scholar.google.com.br/?hl=pt">Google Acadêmico</a>
+                    <a href="https://br.search.yahoo.com/?fr2=p:fprd,mkt:br">Yahoo!</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Listador de Tarefas</h1>
+            <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+        <ul id="taskList">
+            <!-- As tarefas serão adicionadas aqui -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
